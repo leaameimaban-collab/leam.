@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Strands | RNHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="home.html" class="nav-link active">Home</a>
+        <a href="about-us.html" class="nav-link">About Us</a>
+        <a href="strand.html" class="nav-link">Strands</a>
+        <a href="mission-vision.html" class="nav-link">Mission & Vision</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link logout-btn">Log-out</a>
+    </div>
+</nav>
+
+    <header class="page-header">
+        <h1>Our Academic Strands</h1>
+        <p>Quality Education Tailored for Your Success</p>
+    </header>
+
+    <main class="container">
+        <section class="strand-list">
+            
+            <div class="strand-item">
+                <div class="strand-letter stem-color">STEM</div>
+                <div class="strand-details">
+                    <h3>Science, Technology, Engineering, and Mathematics</h3>
+                    <p>Designed for students who aim to excel in medicine, engineering, and pure sciences through advanced mathematics and research.</p>
+                </div>
+            </div>
+
+            <div class="strand-item">
+                <div class="strand-letter abm-color">ABM</div>
+                <div class="strand-details">
+                    <h3>Accountancy, Business, and Management</h3>
+                    <p>Building the foundation for future accountants and entrepreneurs with a focus on financial management and corporate leadership.</p>
+                </div>
+            </div>
+
+            <div class="strand-item">
+                <div class="strand-letter humss-color">HUMSS</div>
+                <div class="strand-details">
+                    <h3>Humanities and Social Sciences</h3>
+                    <p>Cultivating critical thinking and communication skills for those pursuing law, journalism, and social services.</p>
+                </div>
+            </div>
+
+            <div class="strand-item">
+                <div class="strand-letter ict-color">ICT</div>
+                <div class="strand-details">
+                    <h3>Technical-Vocational-Livelihood (ICT)</h3>
+                    <p>Specialized training in computer programming, web development, and animation to prepare students for the digital industry.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+ <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Rosales National High School</p>
+        <p>Site Designed & Developed by: 
+            <span class="dev-link" onclick="openDevModal()">Lea Meimban</span>
+        </p>
+    </div>
+</footer>
+
+<div id="developerModal" class="modal-overlay">
+    <div class="modal-card">
+        <span class="modal-close" onclick="closeDevModal()">&times;</span>
+        
+        <div class="modal-scroll-area">
+            <div class="profile-header-top">
+                <div class="header-name-box">
+                    <h1 class="page-title-fixed">Web Developer Profile</h1>
+                    <div class="dev-badge-fixed">Lea Meimban</div>
+                </div>
+                <div class="header-photo-box">
+                    <img src="person 1 (2).jpg" alt="Lea Meimban">
+                </div>
+            </div>
+
+            <div class="resume-layout">
+                <div class="left-section">
+                    <div class="section-box">
+                        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <ul>
+                            <li><strong>Senior High School (ICT)</strong> — Rosales National High School</li>
+                            <li><strong>Junior High School</strong> — Rosales National High School</li>
+                            <li><strong>Elementary</strong> — Rosales South Central School</li>
+                        </ul>
+                    </div>
+                    <div class="section-box">
+                        <h2><i class="fas fa-certificate"></i> Seminars / Trainings</h2>
+                        <ul>
+                            <li>ICT Bootcamp: Web Development Basics</li>
+                            <li>Digital Literacy & Cyber Security Awareness</li>
+                            <li>Data Privacy Orientation</li>
+                            <li>Google Workspace Training</li>
+                        </ul>
+                    </div>
+                    <div class="section-box">
+                        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                        <ul>
+                            <li>Student Intern — JD Computer Shop</li>
+                            <li>Freelance Layout Artist</li>
+                            <li>Photoshop Design Editor</li>
+                            <li>Social Media Assistant</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <div class="section-box">
+                        <h2><i class="fas fa-user"></i> Personal Details</h2>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i> Cabalaoangan Norte, Rosales, Pangasinan</div>
+                        <div class="info-item"><i class="fas fa-phone"></i> 09475604136</div>
+                        <div class="info-item"><i class="fas fa-envelope"></i> meimbanlea5@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openDevModal() {
+    document.getElementById("developerModal").style.display = "flex";
+    document.body.style.overflow = "hidden"; 
+}
+function closeDevModal() {
+    document.getElementById("developerModal").style.display = "none";
+    document.body.style.overflow = "auto"; 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RNHS-SHS Log In & Sign Up</title>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6d6ff;
+}
+
+.container {
+    width: 320px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* School Name */
+.school-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4b0082; /* dark purple */
+}
+
+.container h2 {
+    margin-bottom: 15px;
+    color: purple;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Toggle link */
+p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+span {
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="logo.jpg" alt="RNHS Logo">
+    </div>
+
+    <div class="school-name">Rosales National High School - Senior High</div>
+
+    <h2 id="title">Log In</h2>
+
+    <div id="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <a href="home.html"><button>Log In</button></a>
+        <p>Don't have an account? <span onclick="toggleForm()">Sign Up</span></p>
+    </div>
+
+    <div id="signup-form" style="display:none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <a href="home.html"><button>Create Account</button></a>
+        <p>Already have an account? <span onclick="toggleForm()">Log In</span></p>
+    </div>
+</div>
+
+<script>
+function toggleForm() {
+    const login = document.getElementById("login-form");
+    const signup = document.getElementById("signup-form");
+    const title = document.getElementById("title");
+
+    if (login.style.display === "none") {
+        login.style.display = "block";
+        signup.style.display = "none";
+        title.innerText = "Log In";
+    } else {
+        login.style.display = "none";
+        signup.style.display = "block";
+        title.innerText = "Sign Up";
+    }
+}
+</script>
+
+</body>
+</html>
